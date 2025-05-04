@@ -1,0 +1,1 @@
+Este programa está diseñado para ayudar a los estudiantes a gestionar sus tareas escolares de forma eficiente. Utilizando una interfaz gráfica simple con Tkinter, los usuarios pueden registrar, visualizar y hacer un seguimiento de sus tareas, así como recibir notificaciones sobre las tareas con fecha de vencimiento cercana.
