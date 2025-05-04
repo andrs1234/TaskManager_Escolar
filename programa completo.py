@@ -40,6 +40,9 @@ def agregar_tarea(tarea_nombre, tarea_fecha, tareas, frame):
     # Actualizar la interfaz con la nueva tarea
     actualizar_tareas(tareas, frame)
 
+    # Revisar si se deben enviar notificaciones
+    check_deadlines(tareas)
+
 # Función para actualizar la lista de tareas en la interfaz
 def actualizar_tareas(tareas, frame):
     # Limpiar el frame antes de redibujar
@@ -102,6 +105,9 @@ def crear_app():
     
     # Mostrar tareas iniciales
     actualizar_tareas(tareas, frame)
+
+    # Revisar notificaciones para tareas existentes
+    check_deadlines(tareas)
 
     # Entradas para agregar tarea
     tarea_nombre_entry = tk.Entry(root, width=30)
